@@ -1,0 +1,23 @@
+#!/bin/bash
+printf "\nEnter number of students : "
+read n
+for (( i=n; i>=1; i-- ))
+do
+printf "\nEnter name : "
+read name
+printf "\nEnter marks : "
+read mark
+if [ $mark -ge 90 ];then
+printf "\n $name got S grade\n"
+elif [ $mark -ge 80 ];then
+printf "\n $name got A grade\n"
+elif [ $mark -ge 70 ];then
+printf "\n $name got B grade\n"
+elif [ $mark -ge 60 ];then
+printf "\n $name got C grade\n"
+elif [ $mark -ge 50 ];then
+printf "\n $name got D grade\n"
+else
+printf "\n $name failed\n"
+fi
+done

@@ -1,0 +1,18 @@
+#!/bin/sh
+printf "Enter N value : "
+read num
+sume=0
+sumo=0
+i=1
+while [ $i -le $num ]
+do
+if [ `expr $i % 2` -eq 0 ];then
+sume=`expr $sume + $i`
+else
+sumo=`expr $sumo + $i`
+fi
+i=`expr $i + 1`
+done
+printf "The sum of even numbers upto N : $sume\n"
+printf "The sum of odd numbers upto N : $sumo\n"
+

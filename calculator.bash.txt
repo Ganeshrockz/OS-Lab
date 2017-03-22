@@ -1,0 +1,31 @@
+#!/bin/bash
+for (( ; ; ))
+do
+printf "Enter Number 1: "
+read n1
+printf "Enter Number 2: "
+read n2
+echo "Menu"
+echo "1.Add"
+echo "2.Subtract"
+echo "3.Multiply"
+echo "4.Divide"
+echo "5.Power"
+echo "6.Exit"
+echo
+printf "Enter an option : "
+read op
+if [ $op -eq 1 ];then
+echo $n1+$n2 | bc
+elif [ $op -eq 2 ];then
+echo $n1-$n2 | bc
+elif [ $op -eq 3 ];then
+echo $n1*$n2 | bc
+elif [ $op -eq 4 ];then
+echo $n1/$n2 | bc
+elif [ $op -eq 5 ];then
+echo $n1^$n2 | bc
+else
+exit 0
+fi
+done

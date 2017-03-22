@@ -1,0 +1,15 @@
+#!/bin/sh
+printf "Enter N value : "
+read n
+u=0
+v=1
+echo "$v\n"
+i=2
+while [ $i -le $n ]
+do
+w=`expr $u + $v`
+echo "$w\n"
+u=$v
+v=$w
+i=`expr $i + 1`
+done

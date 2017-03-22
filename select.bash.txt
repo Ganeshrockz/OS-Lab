@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "LIST OF SPORTS"
+select sports in Cricket Football Hockey Tennis Chess
+do
+break
+done
+if [ "$sports" =  "" ];then
+echo "Choose proper option"
+else
+echo "You chose $sports"
+fi

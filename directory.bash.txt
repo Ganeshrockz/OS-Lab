@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Current directory is "
+sleep 1
+pwd
+sleep 1
+echo "Enter name of new directory..."
+read var
+sleep 1
+mkdir $var
+echo "Directory created"
+cd $var
+sleep 1
+echo "Press any key to move to new directory"
+read a
+sleep 1
+echo "Moved to new directory"
+sleep 1
+echo "Enter name of new file to be created...."
+read v
+sleep 1
+vi $v .txt
+sleep 1
+echo "Press any key to list the contents of the folder $var"
+read n
+ls
